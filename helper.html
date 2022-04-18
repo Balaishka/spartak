@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Перевод пикселей в vw</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            max-width: 120px;
+            margin-right: 50px;
+        }
+
+        .new-result {
+            max-width: 300px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="first"></div>
+    <div class="twice"></div>
+    <div class="third"></div>
+
+    <div class="new-result"></div>
+
+    <script>
+
+        const first = document.querySelector('.first');
+        const twice = document.querySelector('.twice');
+        const third = document.querySelector('.third');
+        const newResult = document.querySelector('.new-result');
+
+        for (let i = 1; i <= 33; i++) {
+            let result = (i / 19.2).toFixed(2);
+
+            first.append(`${i}px  =  ${result}vw       `);
+        }
+
+        for (let i = 34; i <= 66; i++) {
+            let result = (i / 19.2).toFixed(2);
+
+            twice.append(`${i}px  =  ${result}vw       `);
+        }
+
+        for (let i = 67; i <= 100; i++) {
+            let result = (i / 19.2).toFixed(2);
+
+            third.append(`${i}px  =  ${result}vw       `);
+        }
+
+        let num = 180;
+        let result = (num / 19.2).toFixed(2);
+        newResult.append(`${num}px  =  ${result}vw       `);
+
+    </script>
+</body>

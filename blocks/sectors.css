@@ -1,0 +1,255 @@
+.sectors {
+    margin: 0 0 5.21vw;
+    position: relative;
+    text-align: center;
+}
+
+.sectors__sheme {
+    max-width: 58.54vw;
+}
+
+.sectors__choice-block {
+    padding: 0.83vw;
+    box-sizing: border-box;
+    max-width: 13.96vw;
+    background-color: #1B232C;
+    position: absolute;
+    top: 4.3vw;
+    right: 5.5vw;
+    text-align: left;
+}
+
+.sectors__img-mobile {
+    display: none;
+}
+
+.sectors__choice {
+    box-sizing: border-box;
+}
+
+.sectors__close {
+    position: absolute;
+    top: 0.99vw;
+    right: 0.83vw;
+    cursor: pointer;
+}
+
+.sectors__title {
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 0.83vw;
+    line-height: 1.38;
+    letter-spacing: -0.01vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 0.21vw;
+}
+
+.sectors__free-seats {
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.01vw;
+    color: #A5ACB8;
+    margin: 0 0 0.83vw;
+}
+
+.sectors__img {
+    width: 100%;
+    margin-bottom: 0.83vw;
+}
+
+.sectors__categories {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.83vw;
+}
+
+.sectors__category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.21vw;
+}
+
+.sectors__category:last-child {
+    margin-bottom: 0;
+}
+
+.sectors__category-text {
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.01vw;
+    color: #A5ACB8;
+    margin-right: 0.26vw;
+}
+
+.sectors__category-number {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 0.83vw;
+    line-height: 1.38;
+    text-align: right;
+    letter-spacing: -0.01vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.sectors__button {
+    padding: 0.52vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: FCSM-DemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.01vw;
+    background-color: #CC122D;
+    text-decoration: none;
+}
+
+/* Mobile
+----------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .sectors {
+        margin-bottom: 0;
+        width: 100% !important;
+    }
+
+    .sectors__sheme {
+        margin-bottom: 5.21vw;
+        max-width: 93.87vw;
+    }
+
+    .sectors__choice-block {
+        position: relative;
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        padding: 3.13vw 5.21vw;
+        display: flex;
+    }
+
+    .sectors__img-mobile {
+        display: block;
+        max-width: 42.58vw;
+        margin-right: 3.13vw;
+    }
+
+    .sectors__choice {
+        width: 100%;
+    }
+
+    .sectors__img {
+        display: none;
+    }
+
+    .sectors__close {
+        top: 3.52vw;
+        right: 5.21vw;
+    }
+
+    .sectors__title {
+        font-size: 2.08vw;
+        line-height: 1.38;
+        margin-bottom: 0.52vw;
+    }
+
+    .sectors__free-seats {
+        font-size: 1.82vw;
+        line-height: 1.29;
+        margin-bottom: 2.08vw;
+    }
+
+    .sectors__categories {
+        margin-bottom: 2.08vw;
+    }
+
+    .sectors__category {
+        margin-bottom: 0.52vw;
+    }
+
+    .sectors__category-text {
+        font-size: 1.82vw;
+        line-height: 1.29;
+    }
+
+    .sectors__category-number {
+        font-size: 2.08vw;
+        line-height: 1.38;
+    }
+
+    .sectors__button {
+        padding: 1.30vw;
+        font-size: 1.82vw;
+        line-height: 1.29;
+        max-width: 30.73vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sectors__sheme {
+        margin-bottom: 5.33vw;
+        max-width: 91.47vw;
+    }
+
+    .sectors__choice-block {
+        padding: 4.27vw 6.40vw;
+        display: block;
+    }
+
+    .sectors__img-mobile {
+        display: none;
+    }
+
+    .sectors__img {
+        display: block;
+        margin-bottom: 4.27vw;
+    }
+
+    .sectors__close {
+        top: 5.07vw;
+        right: 6.40vw;
+    }
+
+    .sectors__title {
+        font-size: 4.27vw;
+        margin-bottom: 1.07vw;
+    }
+
+    .sectors__free-seats {
+        font-size: 3.73vw;
+        margin-bottom: 4.27vw;
+    }
+
+    .sectors__categories {
+        margin-bottom: 4.27vw;
+    }
+
+    .sectors__category {
+        margin-bottom: 1.07vw;
+    }
+
+    .sectors__category-text {
+        font-size: 3.73vw;
+    }
+
+    .sectors__category-number {
+        font-size: 4.27vw;
+    }
+
+    .sectors__button {
+        padding: 2.67vw;
+        font-size: 3.73vw;
+        max-width: 100%;
+    }
+}

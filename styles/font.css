@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "FCSM-Normal";
+  src: url(../fonts/FCSM-Text-Normal.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FCSM-Medium";
+  src: url(../fonts/FCSM-Text-Medium.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FCSM-DemiBold";
+  src: url(../fonts/FCSM-Text-DemiBold.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FCSM-Bold";
+  src: url(../fonts/FCSM-Text-Bold.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+  font-display: swap;
+}
