@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="./styles/global.css" />
 	<link rel="stylesheet" href="./styles/all-styles.css" />
 
+	<link rel="stylesheet" href="./blocks/style.css" />
 	<link rel="stylesheet" href="./blocks/selection.css" />
 	<link rel="stylesheet" href="./blocks/sectors.css" />
 	<link rel="stylesheet" href="./blocks/place.css" />
@@ -1181,6 +1182,14 @@
 				</section>
 
 				<section class="selection-nav">
+					<a href="./tickets_sector.html" class="selection__link-back">
+						<svg class="selection__img-back" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.875 10H3.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M8.75 4.375L3.125 10L8.75 15.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						К Арене
+					</a>
+
 					<ul class="selection-nav__list">
 						<li class="selection-nav__item selection-nav__item_selected">
 							<span class="selection-nav__number">
@@ -1280,16 +1289,18 @@
 								</div>
 
 								<div class="place-order__table-categories">
-									<select name="categories" id="#categories-one">
-										<option value="Взрослый">Взрослый</option>
-										<option value="Детский">Детский</option>
-									</select>
+									<div class="place-order__select-block">
+										<select class="place-order__table-select" name="categories" id="#categories-one">
+											<option class="place-order__table-option" value="Взрослый">Взрослый</option>
+											<option class="place-order__table-option" value="Детский">Детский</option>
+										</select>
+									</div>
 								</div>
 
 								<p class="place-order__price">2 500 ₽</p>
 
 								<a href="#" class="place-order__delete">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="place-order__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1306,16 +1317,18 @@
 								</div>
 
 								<div class="place-order__table-categories">
-									<select name="categories" id="#categories-one">
-										<option value="Взрослый">Взрослый</option>
-										<option value="Детский">Детский</option>
-									</select>
+									<div class="place-order__select-block">
+										<select class="place-order__table-select" name="categories" id="#categories-one">
+											<option class="place-order__table-option" value="Взрослый">Взрослый</option>
+											<option class="place-order__table-option" value="Детский">Детский</option>
+										</select>
+									</div>
 								</div>
 
 								<p class="place-order__price">2 500 ₽</p>
 
 								<a href="#" class="place-order__delete">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="place-order__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1332,16 +1345,18 @@
 								</div>
 
 								<div class="place-order__table-categories">
-									<select name="categories" id="#categories-one">
-										<option value="Взрослый">Взрослый</option>
-										<option value="Детский">Детский</option>
-									</select>
+									<div class="place-order__select-block">
+										<select class="place-order__table-select" name="categories" id="#categories-one">
+											<option class="place-order__table-option" value="Взрослый">Взрослый</option>
+											<option class="place-order__table-option" value="Детский">Детский</option>
+										</select>
+									</div>
 								</div>
 
 								<p class="place-order__price">2 500 ₽</p>
 
 								<a href="#" class="place-order__delete">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<svg class="place-order__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 										<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1351,6 +1366,12 @@
 								</a>
 							</li>
 						</ul>
+
+						<div class="place-order__total">
+							<span class="place-order__amount">3 билета:</span>
+							<span class="place-order__sum">10 500 ₽</span>
+							<a href="#" class="place-order__button">Оформить заказ</a>
+						</div>
 					</div>
 				</section>
 

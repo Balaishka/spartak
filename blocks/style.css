@@ -1,0 +1,8 @@
+.content {
+    position: relative;
+    z-index: 10;
+}
+
+a, path, button {
+    transition: all .1s ease-in-out;
+}

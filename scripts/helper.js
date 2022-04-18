@@ -1,37 +1,48 @@
-/* Body */
+// Body 
 
 const body = document.querySelector('body');
 
-/* Поиск */
+// Поиск
 
 const search = document.querySelector('.desktopHeader__LangContainer-sc-dde3e47d-6');
 const searchWindow = document.querySelector('.searchHeader__Container-sc-66c5a050-0');
 const searchClose = searchWindow.querySelector('.search-close');
 
-/* Корзина */
+// Корзина
 
 const basket = document.querySelector('.basket');
 const popupBackground = document.querySelector('.popup-bg');
 const basketContainer = document.querySelector('.basket-container');
 const basketClose = document.querySelector('.basket-close');
 
-/* Корзина мобильная */
+// Корзина мобильная
 
 const basketMobile = document.querySelector('.basket-mobile');
 const popupBackgroundMobile = document.querySelector('.popup-bg-mobile');
 const basketContainerMobile = document.querySelector('.basket-container-mobile');
 const basketCloseMobile = document.querySelector('.basket-close-mobile');
 
-/* Меню */
+// Меню
 
 const burger = document.querySelector('.mobileHeader__IconContainer-sc-906384ad-2');
 const menu = document.querySelector('.mobileMenu__MobileMenuContainer-sc-21cb2d7-0');
 const menuClose = document.querySelector('.menu-close');
 
-/* Шапка */
+// Шапка
 
 const headerMobile = document.querySelector('.mobileHeader__Spacer-sc-906384ad-0');
 const headerContainerMobile = document.querySelector('.mobileHeader__MobileHeaderContainer-sc-906384ad-1');
+
+// Схема
+
+const schemeSectors = document.querySelector('.sectors__sheme');
+const schemeWindow = document.querySelector('.sectors__choice-block');
+const buttonSchemeWindow = schemeWindow.querySelector('.sectors__close');
+
+//  Схема мест
+
+const schemePlace = document.querySelector('.place__scheme-img');
+const schemePlaceOrder = document.querySelector('.place-order');
 
 function openSearch() {
     searchWindow.classList.remove('fOxsBH');
@@ -93,7 +104,7 @@ function hideHeader() {
     headerContainerMobile.classList.add('gfqdLN');
 }
 
-/* Обработчики событий */
+// Обработчики событий
 
 search.addEventListener('click', openSearch);
 
@@ -126,6 +137,24 @@ basketCloseMobile.addEventListener('click', () => {
 burger.addEventListener('click', openMenu);
 
 menuClose.addEventListener('click', closeMenu);
+
+if (schemeSectors) {
+    schemeSectors.addEventListener('click', () => {
+        schemeWindow.classList.add('sectors__choice-block_opened');
+    });
+}
+
+if (buttonSchemeWindow) {
+    buttonSchemeWindow.addEventListener('click', () => {
+        schemeWindow.classList.remove('sectors__choice-block_opened');
+    });
+}
+
+if (schemePlace) {
+    schemePlace.addEventListener('click', () => {
+        schemePlaceOrder.classList.add('place-order_opened');
+    });
+}
 
 let valueScroll = 0;
 

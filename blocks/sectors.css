@@ -2,6 +2,7 @@
     margin: 0 0 5.21vw;
     position: relative;
     text-align: center;
+    width: 100%;
 }
 
 .sectors__sheme {
@@ -17,6 +18,11 @@
     top: 4.3vw;
     right: 5.5vw;
     text-align: left;
+    display: none;
+}
+
+.sectors__choice-block_opened {
+    display: block;
 }
 
 .sectors__img-mobile {
@@ -32,6 +38,10 @@
     top: 0.99vw;
     right: 0.83vw;
     cursor: pointer;
+}
+
+.sectors__close:hover path {
+    stroke: #CC122D;
 }
 
 .sectors__title {
@@ -60,6 +70,28 @@
 .sectors__img {
     width: 100%;
     margin-bottom: 0.83vw;
+}
+
+.sectors__dop-info {
+    margin-bottom: 0.83vw;
+    display: flex;
+    align-items: start;
+}
+
+.sectors__dop-info-img {
+    margin-right: 0.42vw;
+    width: 1.25vw;/*24px*/
+    height: 1.25vw;/*24px*/
+}
+
+.sectors__dop-info-text {
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    color: #A5ACB8;
+    margin: 0;
 }
 
 .sectors__categories {
@@ -116,13 +148,18 @@
     text-decoration: none;
 }
 
+.sectors__button:hover {
+    background-color: #A1141B;
+}
+
 /* Mobile
 ----------------------------------------------*/
 
 @media screen and (max-width: 1199px) {
     .sectors {
         margin-bottom: 0;
-        width: 100% !important;
+        max-width: 100% !important;
+        width: 100%;
     }
 
     .sectors__sheme {
@@ -131,11 +168,16 @@
     }
 
     .sectors__choice-block {
-        position: relative;
-        top: 0;
+        position: fixed;
+        top: auto;
         right: 0;
+        left: 0;
+        bottom: 0;
         max-width: 100%;
         padding: 3.13vw 5.21vw;
+    }
+
+    .sectors__choice-block_opened {
         display: flex;
     }
 
@@ -143,6 +185,20 @@
         display: block;
         max-width: 42.58vw;
         margin-right: 3.13vw;
+    }
+
+    .sectors__dop-info {
+        margin-bottom: 2.08vw;
+    }
+
+    .sectors__dop-info-img {
+        margin-right: 1.04vw;
+        width: 3.13vw;/*24px*/
+        height: 3.13vw;/*24px*/
+    }
+
+    .sectors__dop-info-text {
+        font-size: 1.82vw;
     }
 
     .sectors__choice {
@@ -204,6 +260,10 @@
 
     .sectors__choice-block {
         padding: 4.27vw 6.40vw;
+        position: relative;
+    }
+
+    .sectors__choice-block_opened {
         display: block;
     }
 
@@ -214,6 +274,20 @@
     .sectors__img {
         display: block;
         margin-bottom: 4.27vw;
+    }
+
+    .sectors__dop-info {
+        margin-bottom: 4.27vw;
+    }
+
+    .sectors__dop-info-img {
+        margin-right: 2.13vw;
+        width: 6.40vw;/*24px*/
+        height: 6.40vw;/*24px*/
+    }
+
+    .sectors__dop-info-text {
+        font-size: 3.73vw;
     }
 
     .sectors__close {
