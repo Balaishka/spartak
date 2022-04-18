@@ -23,6 +23,14 @@
             max-width: 300px;
             font-size: 20px;
         }
+
+        .coeff {
+            max-width: 300px;
+            font-size: 26px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 1px solid #000;
+        }
     </style>
 </head>
 <body>
@@ -32,15 +40,18 @@
 
     <div class="new-result"></div>
 
+    <div class="coeff"></div>
+
     <script>
 
         const first = document.querySelector('.first');
         const twice = document.querySelector('.twice');
         const third = document.querySelector('.third');
         const newResult = document.querySelector('.new-result');
+        const coeff = document.querySelector('.coeff');
 
-        const coef = 19.2;
-        //const coef = 7.68;
+        //const coef = 19.2;
+        const coef = 7.68;
         //const coef = 3.75;
 
         for (let i = 1; i <= 33; i++) {
@@ -61,9 +72,11 @@
             third.append(`${i}px  =  ${result}vw       `);
         }
 
-        let num = 1182;
+        let num = 160;
         let result = (num / coef).toFixed(2);
         newResult.append(`${num}px  =  ${result}vw       `);
+
+        coeff.append(coef);
 
     </script>
 </body>

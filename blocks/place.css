@@ -1,8 +1,11 @@
 .place__header {
+    margin-bottom: 2.08vw;
+}
+
+.place__sector {
     display: flex;
     justify-content: space-between;
     align-items: top;
-    margin-bottom: 2.08vw;
 }
 
 .place__link {
@@ -34,12 +37,9 @@
     stroke: #CC122D;
 }
 
-.place__sector {
-    max-width: 54.58vw;
-}
-
 .place__sector-name {
     color: #FFFFFF;
+    font-family: FCSM-Bold, sans-serif;
     font-size: 2.08vw;
     line-height: 1.25;
     margin: 0 0 1.25vw;
@@ -48,11 +48,12 @@
 
 .place__list {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 28.28vw;
 }
 
 .place__item {
@@ -69,10 +70,6 @@
     line-height: 1.29;
     letter-spacing: 0.1px;
     text-transform: uppercase;
-}
-
-.place__item:not(:last-child) {
-    margin-right: 1.25vw;
 }
 
 .place__circle {
@@ -133,6 +130,7 @@
     justify-content: center;
     padding: 2.08vw 0;
     width: 100%;
+    box-shadow: 0px -1px 0px #5C6168;
 }
 
 .place-order_opened {
@@ -190,6 +188,7 @@
     position: relative;
     width: max-content;
     max-width: 100%;
+    cursor: pointer;
 }
 
 .place-order__select-block::after {
@@ -234,6 +233,11 @@
     letter-spacing: -0.165px;
     text-transform: uppercase;
     margin: 0;
+}
+
+.place-order__delete-img {
+    width: 1.25vw;
+    height: 1.25vw;
 }
 
 .place-order__delete-img:hover path {
@@ -287,4 +291,139 @@
 
 .place-order__button:hover {
     background-color: #A1141B;
+}
+
+/* Mobile
+--------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .place__header {
+        margin-bottom: 7.55vw;/*58px*/
+    }
+
+    .place__link {
+        padding: 1.95vw 3.13vw;/*15px 24px*/
+        font-size: 1.82vw;
+    }
+
+    .place__sector-name {
+        font-size: 4.17vw;
+        margin-bottom: 4.17vw;
+    }
+
+    .place__list {
+        max-width: 70.70vw;
+    }
+
+    .place__item {
+        border-radius: 3.13vw;
+        padding: 1.69vw 3.13vw;
+        font-size: 1.82vw;
+    }
+
+    .place__circle {
+        width: 1.95vw;
+        height: 1.95vw;
+        margin-right: 1.30vw;
+    }
+
+    .place__content {
+        display: block;
+    }
+
+    .place__plan {
+        display: none;
+    }
+    
+    .sectors__choice-block_place {
+        display: none !important;
+    }
+
+    .place__scheme-img {
+        max-width: 77.60vw;
+        margin-bottom: 5.47vw;
+    }
+
+    /* Order */
+
+    .place-order {
+        padding: 5.21vw 0 6.25vw;
+    }
+
+    .place-order__content {
+        max-width: 93.75vw;
+    }
+
+    .place-order__title {
+        font-size: 4.17vw;
+    }
+
+    .place-order__table-row {
+        grid-template-columns: 32.81vw 1fr 20.83vw 8.33vw;
+        grid-gap: 5px;
+        padding: 3.26vw 0 1.43vw;
+    }
+
+    .place-order__table-title {
+        font-size: 3.13vw;
+        margin-bottom: 0.91vw;
+    }
+
+    .place-order__table-subtitle {
+        font-size: 2.08vw;
+    }
+
+    .place-order__select-block {
+        width: 100%;
+    }
+
+    .place-order__select-block::after {
+        width: 2.60vw;
+        height: 2.60vw;
+        top: 0.78vw;
+        right: 1.56vw;
+    }
+
+    .place-order__table-select {
+        padding: 0.91vw 5.21vw 0.91vw 2.08vw;
+        font-size: 1.82vw;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .place-order__price {
+        font-size: 3.13vw;
+    }
+
+    .place-order__delete {
+        text-align: right;
+    }
+
+    .place-order__delete-img {
+        width: 3.13vw;
+        height: 3.13vw;
+    }
+
+    .place-order__total {
+        margin-top: 3.13vw;
+    }
+
+    .place-order__amount {
+        font-size: 2.34vw;
+        margin-right: 1.04vw;
+    }
+
+    .place-order__sum {
+        font-size: 3.13vw;
+        margin-right: 5.47vw;
+    }
+
+    .place-order__button {
+        font-size: 1.82vw;
+        padding: 1.82vw 6.90vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
 }
