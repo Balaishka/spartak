@@ -44,6 +44,10 @@ const buttonSchemeWindow = schemeWindow.querySelector('.sectors__close');
 const schemePlace = document.querySelector('.place__scheme-img');
 const schemePlaceOrder = document.querySelector('.place-order');
 
+const arrowOrder = document.querySelector('.place-order__arrow');
+const tableOrder = document.querySelector('.place-order__table');
+const totalOrder = document.querySelector('.place-order__total');
+
 function openSearch() {
     searchWindow.classList.remove('fOxsBH');
     searchWindow.classList.add('gSSMqJ');
@@ -153,6 +157,14 @@ if (buttonSchemeWindow) {
 if (schemePlace) {
     schemePlace.addEventListener('click', () => {
         schemePlaceOrder.classList.add('place-order_opened');
+    });
+}
+
+if (arrowOrder) {
+    arrowOrder.addEventListener('click', () => {
+        arrowOrder.classList.toggle('place-order__arrow_close');
+        tableOrder.classList.toggle('place-order__table_close');
+        totalOrder.classList.toggle('place-order__total_close');
     });
 }
 

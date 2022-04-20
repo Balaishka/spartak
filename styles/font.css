@@ -1,24 +1,35 @@
 @font-face {
   font-family: "FCSM-Normal";
   src: url(../fonts/FCSM-Text-Normal.ttf) format("truetype");
+  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: "FCSM-Medium";
   src: url(../fonts/FCSM-Text-Medium.ttf) format("truetype");
+  font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: "FCSM-DemiBold";
   src: url(../fonts/FCSM-Text-DemiBold.ttf) format("truetype");
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: "FCSM-Bold";
   src: url(../fonts/FCSM-Text-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FCSM-ExtraBold";
+  src: url(../fonts/FCSM-Text-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
   font-display: swap;
 }
 

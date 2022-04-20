@@ -1,0 +1,55 @@
+.ordering {
+    width: 100%;
+}
+
+.ordering > section {
+    width: 100%;
+    max-width: 82.5vw;
+}
+
+.ordering__header {
+    background-image: url(../public/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 6.77vw 0 2.08vw;
+    max-width: 100% !important;
+}
+
+.ordering__title {
+    max-width: 82.5vw;
+    margin: 0 auto;
+    font-family: FCSM-ExtraBold, sans-serif;
+    font-weight: 800;
+    font-size: 6.25vw;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+/* Mobile
+--------------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .ordering__header {
+        padding: 8.59vw 0 3.13vw;
+    }
+
+    .ordering__title {
+        max-width: 93.75vw;
+        font-size: 9.38vw;
+        font-family: FCSM-Bold, sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ordering__header {
+        padding: 7.47vw 0 2.13vw;
+    }
+
+    .ordering__title {
+        max-width: 91.73vw;
+        font-size: 10.67vw;
+        line-height: 1.25;
+    }
+}

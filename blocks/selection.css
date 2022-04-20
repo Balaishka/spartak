@@ -34,6 +34,20 @@
 
 .selection__team {
     max-width: 12.71vw;
+    text-align: center;
+}
+
+.selection__team-logo {
+    max-width: 11.46vw;
+}
+
+.selection__team-name {
+    margin: 0;
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 1.25;
+    color: #FFFFFF;
 }
 
 .selection__info {
@@ -254,6 +268,14 @@
         max-width: 22.14vw;
     }
 
+    .selection__team-logo {
+        max-width: 19.53vw;
+    }
+
+    .selection__team-name {
+        font-size: 4.17vw;
+    }
+
     .selection__time {
         margin: 5.21vw 0 2.08vw;
         font-size: 4.17vw;
@@ -347,6 +369,14 @@
 
     .selection__team {
         max-width: 32.27vw;
+    }
+
+    .selection__team-logo {
+        max-width: 23.47vw;
+    }
+
+    .selection__team-name {
+        font-size: 4.80vw;
     }
 
     .selection__team_right {

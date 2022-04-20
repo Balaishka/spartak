@@ -1150,14 +1150,20 @@
 				<section class="selection__header">
 					<h1 class="selection__title">1-й тур | Тинькофф РПЛ</h1>
 					<div class="selection__game">
-						<img src="./public/images/team-left.png" alt="Спартак" class="selection__team selection__team_left">
+						<div class="selection__team selection__team_left">
+							<img src="./public/images/team-left.png" alt="Спартак" class="selection__team-logo">
+							<p class="selection__team-name">Спартак</p>
+						</div>
 
 						<div class="selection__info">
 							<h2 class="selection__time">19 июля, 19:00</h2>
 							<p class="selection__text">Открытие Банк Арена</p>
 						</div>
 
-						<img src="./public/images/team-right.png" alt="Локомотив" class="selection__team selection__team_right">
+						<div class="selection__team selection__team_right">
+							<img src="./public/images/team-right.png" alt="Локомотив" class="selection__team-logo">
+							<p class="selection__team-name">Локомотив</p>
+						</div>
 					</div>
 
 					<div class="selection__winline">
@@ -1281,7 +1287,12 @@
 
 				<section class="place-order">
 					<div class="place-order__content">
-						<h3 class="place-order__title">Ваши билеты</h3>
+						<h3 class="place-order__title">
+							Ваши билеты
+							<svg class="place-order__arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19.5 9L12 16.5L4.5 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</h3>
 						<ul class="place-order__table">
 							<li class="place-order__table-row">
 								<div class="place-order__table-place">

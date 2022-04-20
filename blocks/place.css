@@ -151,6 +151,10 @@
     color: #FFFFFF;
 }
 
+.place-order__arrow {
+    display: none;
+}
+
 .place-order__table {
     list-style: none;
     margin: 0;
@@ -356,6 +360,27 @@
 
     .place-order__title {
         font-size: 4.17vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .place-order__arrow {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 3.13vw;
+        height: 3.13vw;
+        cursor: pointer;
+    }
+
+    .place-order__arrow_close {
+        transform: rotate(180deg);
+    }
+
+    .place-order__table_close,
+    .place-order__total_close {
+        display: none;
     }
 
     .place-order__table-row {
@@ -477,6 +502,11 @@
         font-size: 6.40vw;
     }
 
+    .place-order__arrow {
+        width: 6.40vw;
+        height: 6.40vw;
+    }
+
     .place-order__table-row {
         grid-template-columns: 47.47vw 31.20vw 1fr;
         grid-template-rows: repeat(2, auto);
@@ -543,6 +573,10 @@
         display: grid;
         grid-template-columns: 1fr 49.60vw;
         margin-top: 4.27vw;
+    }
+
+    .place-order__total_close {
+        display: none;
     }
 
     .place-order__amount {
