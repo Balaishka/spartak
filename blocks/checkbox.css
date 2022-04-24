@@ -1,0 +1,87 @@
+.checkbox__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.checkbox__input {
+    opacity: 0;
+}
+
+.checkbox__label {
+    display: block;
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    color: #A5ACB8;
+    padding-left: 1.46vw;
+    position: relative;
+}
+
+.checkbox__label::before {
+    content: '';
+    box-sizing: border-box;
+    width: 1.04vw;
+    height: 1.04vw;
+    border: 2px solid #A5ACB8;
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+}
+
+.checkbox__label::after {
+    display: none;
+    content: '';
+    width: 1.04vw;
+    height: 1.04vw;
+    background-image: url(../public/images/checkmark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+    display: block;
+}
+
+/* Mobile
+--------------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .checkbox__label {
+        font-size: 1.82vw;
+        padding-left: 3.65vw;
+    }
+    
+    .checkbox__label::before {
+        width: 2.60vw;
+        height: 2.60vw;
+    }
+    
+    .checkbox__label::after {
+        width: 2.60vw;
+        height: 2.60vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .checkbox__label {
+        font-size: 3.73vw;
+        padding-left: 7.47vw;
+    }
+    
+    .checkbox__label::before {
+        width: 5.33vw;
+        height: 5.33vw;
+    }
+    
+    .checkbox__label::after {
+        width: 5.33vw;
+        height: 5.33vw;
+    }
+}

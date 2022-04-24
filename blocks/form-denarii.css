@@ -1,0 +1,181 @@
+.form-denarii {
+    padding: 1.04vw 0;
+    border-bottom: 1px solid #5C6168;
+}
+
+.form-denarii__use {
+    display: flex;
+    align-items: center;
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.56;
+    letter-spacing: 0.1px;
+    color: #A5ACB8;
+    margin: 0 0 0.42vw;
+}
+
+.form-denarii__use-img {
+    width: 1.04vw;
+    height: 1.04vw;
+    margin-left: 0.42vw;
+}
+
+.form-denarii__available {
+    display: flex;
+    align-items: center;
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.63vw;
+    line-height: 1.17;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #A5ACB8;
+    margin: 0 0 0.42vw;
+}
+
+.form-denarii__amount {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.83vw;
+    line-height: 1.38;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0.21vw;
+}
+
+.form-denarii__img {
+    width: 1.25vw;
+    height: 1.25vw;
+}
+
+.form-denarii__block {
+    display: flex;
+    align-items: center;
+}
+
+.form-denarii__input {
+    padding: 0.73vw 0.83vw;
+    border: 1px solid #5C6168;
+    border-radius: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 0.83vw;
+    line-height: 1.25;
+    color: #A5ACB8;
+    margin-right: 0.63vw;
+    width: 100%;
+    outline: none;
+}
+
+.form-denarii__input:focus {
+    box-shadow: none;
+    border-color: #fff;
+}
+
+.form-denarii__button {
+    box-sizing: border-box;
+    border: 1px solid #C8122D;
+    background-color: transparent;
+    padding: 0.78vw 1.25vw;
+    font-family: FCSM-DemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #C8122D;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.form-denarii__button:hover {
+    background-color: #C8122D;
+    border: 1px solid #C8122D;
+    color: #fff;
+}
+
+/* Mobile
+--------------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .form-denarii {
+        padding: 2.60vw 0;
+    }
+    
+    .form-denarii__use {
+        font-size: 2.34vw;
+        margin-bottom: 1.56vw;
+    }
+    
+    .form-denarii__use-img {
+        width: 2.60vw;
+        height: 2.60vw;
+        margin-left: 1.04vw;
+    }
+    
+    .form-denarii__available {
+        font-size: 1.56vw;
+        margin-bottom: 1.04vw;
+    }
+    
+    .form-denarii__amount {
+        font-size: 2.08vw;
+        margin: 0 0.52vw;
+    }
+    
+    .form-denarii__img {
+        width: 3.13vw;
+        height: 3.13vw;
+    }
+    
+    .form-denarii__input {
+        padding: 1.82vw 2.08vw;
+        font-size: 2.08vw;
+        margin-right: 1.56vw;
+    }
+    
+    .form-denarii__button {
+        padding: 1.95vw 3.13vw;
+        font-size: 1.82vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form-denarii {
+        padding: 5.33vw 0;
+    }
+    
+    .form-denarii__use {
+        display: none;
+    }
+    
+    .form-denarii__available {
+        font-size: 3.20vw;
+        margin-bottom: 2.13vw;
+    }
+    
+    .form-denarii__amount {
+        font-size: 4.27vw;
+        margin: 0 1.07vw;
+    }
+    
+    .form-denarii__img {
+        width: 6.40vw;
+        height: 6.40vw;
+    }
+    
+    .form-denarii__input {
+        padding: 3.73vw 4.27vw;
+        font-size: 4.27vw;
+        margin-right: 1.07vw;
+    }
+    
+    .form-denarii__button {
+        padding: 4.53vw 4.27vw 4.27vw;
+        font-size: 3.20vw;
+    }
+}

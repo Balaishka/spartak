@@ -15,7 +15,10 @@
 	<link rel="stylesheet" href="./styles/all-styles.css" />
 
 	<link rel="stylesheet" href="./blocks/style.css" />
+	<link rel="stylesheet" href="./blocks/selection.css" />
 	<link rel="stylesheet" href="./blocks/ordering.css" />
+	<link rel="stylesheet" href="./blocks/form-denarii.css">
+	<link rel="stylesheet" href="./blocks/checkbox.css">
 
 	<link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
 </head>
@@ -1143,13 +1146,314 @@
 			</div>
 		</header>
 		<main class="content layout__MainContainer-sc-bdf80ada-0 eXeoTU">
-			<article class="ordering containerContent__ContainerContent-sc-feb4c6d1-0 swiperInContentContainer__MainContainer-sc-978aa125-0 ikAgiX hjwbdL">
+			<article class="selection ordering containerContent__ContainerContent-sc-feb4c6d1-0 swiperInContentContainer__MainContainer-sc-978aa125-0 ikAgiX hjwbdL">
 				
 				<section class="ordering__header">
 					<h1 class="ordering__title">Оформление заказа</h1>
 				</section>
 
-				
+				<section class="selection-nav selection-ordering">
+					<a href="./tickets_sector.html" class="selection__link-back">
+						<svg class="selection__img-back" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.875 10H3.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M8.75 4.375L3.125 10L8.75 15.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+						К Арене
+					</a>
+
+					<ul class="selection-nav__list">
+						<li class="selection-nav__item selection-nav__item_selected">
+							<span class="selection-nav__number">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.1437 2.25H13.8955C13.7205 2.25 13.5544 2.33036 13.4473 2.46786L6.08478 11.7946L2.55442 7.32143C2.50101 7.25362 2.43294 7.1988 2.35531 7.16106C2.27768 7.12333 2.19252 7.10368 2.1062 7.10357H0.85799C0.738347 7.10357 0.672275 7.24107 0.74549 7.33393L5.63656 13.5304C5.86513 13.8196 6.30442 13.8196 6.53478 13.5304L15.2562 2.47857C15.3294 2.3875 15.2633 2.25 15.1437 2.25Z" fill="#CC122D"/>
+								</svg>
+							</span>
+							<span>Выберите сектор</span>
+						</li>
+						<li class="selection-nav__line selection-nav__line_selected"></li>
+						<li class="selection-nav__item selection-nav__item_selected">
+							<span class="selection-nav__number">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M15.1437 2.25H13.8955C13.7205 2.25 13.5544 2.33036 13.4473 2.46786L6.08478 11.7946L2.55442 7.32143C2.50101 7.25362 2.43294 7.1988 2.35531 7.16106C2.27768 7.12333 2.19252 7.10368 2.1062 7.10357H0.85799C0.738347 7.10357 0.672275 7.24107 0.74549 7.33393L5.63656 13.5304C5.86513 13.8196 6.30442 13.8196 6.53478 13.5304L15.2562 2.47857C15.3294 2.3875 15.2633 2.25 15.1437 2.25Z" fill="#CC122D"/>
+								</svg>
+							</span>
+							<span>Выберите место</span>
+						</li>
+						<li class="selection-nav__line selection-nav__line_selected"></li>
+						<li class="selection-nav__item selection-nav__item_active">
+							<span class="selection-nav__number">3</span>
+							<span>Данные заказа</span>
+						</li>
+					</ul>
+
+					<div class="selection-nav__time">
+						<p class="selection-nav__timer">01 : 46 : 38</p>
+						<p class="selection-nav__time-info">Оставшееся время для проведение оплаты заказа</p>
+					</div>
+				</section>
+
+				<section class="ordering-content">
+					<div class="ordering-content__left">
+						<div class="ordering-tickets">
+							<h3 class="ordering-content__title ordering-tickets__title">Ваши билеты</h3>
+							<ul class="ordering-tickets__list">
+								<li class="ordering-tickets__item">
+									<div class="ordering-tickets__game">
+										<img src="./public/images/logo-team.png" alt="Локомотив" class="ordering-tickets__logo">
+										<div class="ordering-tickets__game-info">
+											<h4 class="ordering-tickets__team">Локомотив</h4>
+											<p class="ordering-tickets__date">
+												<span>19 июля, 19:00, </span>
+												<span>1-й тур | Тинькофф РПЛ</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="ordering-tickets__place-block">
+										<h5 class="ordering-tickets__place">12 ряд, 47 место</h5>
+										<p class="ordering-tickets__sector">В102 сектор</p>
+									</div>
+
+									<div class="ordering-tickets__actions">
+										<div class="ordering-tickets__actions-top">
+											<p class="ordering-tickets__price">2 500 ₽</p>
+											<a href="#" class="selection__delete">
+												<svg class="selection__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+										</div>
+										<div class="selection__select-block">
+											<select class="selection__select" name="categories" id="#categories-one">
+												<option class="selection__option" value="Взрослый">Взрослый</option>
+												<option class="selection__option" value="Детский">Детский</option>
+											</select>
+										</div>
+									</div>
+								</li>
+
+								<li class="ordering-tickets__item">
+									<div class="ordering-tickets__game">
+										<img src="./public/images/logo-team.png" alt="Локомотив" class="ordering-tickets__logo">
+										<div class="ordering-tickets__game-info">
+											<h4 class="ordering-tickets__team">Локомотив</h4>
+											<p class="ordering-tickets__date">
+												<span>19 июля, 19:00, </span>
+												<span>1-й тур | Тинькофф РПЛ</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="ordering-tickets__place-block">
+										<h5 class="ordering-tickets__place">12 ряд, 47 место</h5>
+										<p class="ordering-tickets__sector">В102 сектор</p>
+									</div>
+
+									<div class="ordering-tickets__actions">
+										<div class="ordering-tickets__actions-top">
+											<p class="ordering-tickets__price">2 500 ₽</p>
+											<a href="#" class="selection__delete">
+												<svg class="selection__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+										</div>
+										<div class="selection__select-block">
+											<select class="selection__select" name="categories" id="#categories-one">
+												<option class="selection__option" value="Взрослый">Взрослый</option>
+												<option class="selection__option" value="Детский">Детский</option>
+											</select>
+										</div>
+									</div>
+								</li>
+
+								<li class="ordering-tickets__item">
+									<div class="ordering-tickets__game">
+										<img src="./public/images/logo-team.png" alt="Локомотив" class="ordering-tickets__logo">
+										<div class="ordering-tickets__game-info">
+											<h4 class="ordering-tickets__team">Локомотив</h4>
+											<p class="ordering-tickets__date">
+												<span>19 июля, 19:00, </span>
+												<span>1-й тур | Тинькофф РПЛ</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="ordering-tickets__place-block">
+										<h5 class="ordering-tickets__place">12 ряд, 47 место</h5>
+										<p class="ordering-tickets__sector">В102 сектор</p>
+									</div>
+
+									<div class="ordering-tickets__actions">
+										<div class="ordering-tickets__actions-top">
+											<p class="ordering-tickets__price">2 500 ₽</p>
+											<a href="#" class="selection__delete">
+												<svg class="selection__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+													<path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												</svg>
+											</a>
+										</div>
+										<div class="selection__select-block">
+											<select class="selection__select" name="categories" id="#categories-one">
+												<option class="selection__option" value="Взрослый">Взрослый</option>
+												<option class="selection__option" value="Детский">Детский</option>
+											</select>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ordering-pass">
+							<h3 class="ordering-content__title ordering-pass__title">Оформить автопропуск</h3>
+							<ul class="ordering-pass__list">
+								<li class="ordering-pass__item">
+									<h4 class="ordering-pass__name">Открытие Банк Арена</h4>
+
+									<div class="selection__select-block">
+										<select class="selection__select" name="categories" id="#categories-one">
+											<option class="selection__option" value="Взрослый">Стоянка А</option>
+											<option class="selection__option" value="Детский">Стоянка Б</option>
+										</select>
+									</div>
+
+									<div class="ordering-pass__amount">
+										<div class="ordering-pass__icon ordering-pass__icon_minus"></div>
+										<div class="ordering-pass__number">1</div>
+										<div class="ordering-pass__icon ordering-pass__icon_plus"></div>
+									</div>
+
+									<p class="ordering-pass__price">2 500 ₽</p>
+
+									<a href="#" class="selection__delete">
+										<svg class="selection__delete-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20.2495 5.25L3.74951 5.25001" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M9.75 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M14.25 9.75V15.75" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="#A5ACB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="ordering-method">
+							<h3 class="ordering-content__title ordering-method__title">Способ оплаты</h3>
+							<ul class="ordering-method__list">
+								<li class="ordering-method__item ordering-method__item_active">
+									<img src="./public/images/methods/credit-card.png" alt="Кредитная карта" class="ordering-method__img">
+									<p class="ordering-method__text">Банковская карта</p>
+								</li>
+								<li class="ordering-method__item">
+									<img src="./public/images/methods/vk-pay.png" alt="Вк-пей" class="ordering-method__img">
+									<p class="ordering-method__text">VK Pay</p>
+								</li>
+								<li class="ordering-method__item">
+									<img src="./public/images/methods/ya-pay.png" alt="Яндекс пей" class="ordering-method__img">
+									<p class="ordering-method__text">Я-PAY</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="ordering-content__right">
+						<div class="ordering-order">
+							<h3 class="ordering-content__title ordering-order__title">Ваши билеты</h3>
+
+							<ul class="ordering-order__list">
+								<li class="ordering-order__item">
+									<p class="ordering-order__text">Цена билетов</p>
+									<p class="ordering-order__price">10 500 ₽</p>
+								</li>
+								<li class="ordering-order__item">
+									<p class="ordering-order__text">Автопропуск</p>
+									<p class="ordering-order__price">2 500 ₽</p>
+								</li>
+								<li class="ordering-order__item">
+									<p class="ordering-order__text">Применен промокод 45FGH4</p>
+									<p class="ordering-order__price">-800 ₽</p>
+								</li>
+							</ul>
+
+							<form class="form-denarii">
+								<p class="form-denarii__use">
+									Использовать денарии
+									<img src="./public/images/info-white.svg" alt="Информация" class="form-denarii__use-img">
+								</p>
+								<p class="form-denarii__available">
+									Доступно (1 денарий = 1 ₽): 
+									<span class="form-denarii__amount">129</span>
+									<img src="./public/images/denarii.png" alt="Денарии" class="form-denarii__img">
+								</p>
+								<div class="form-denarii__block">
+									<input type="text" class="form-denarii__input" placeholder="Списать денарии">
+									<button class="form-denarii__button">Применить</button>
+								</div>
+							</form>
+
+							<form class="ordering-order__bottom">
+								<div class="ordering-order__total">
+									<p class="ordering-order__total-text">Итого</p>
+									<div class="ordering-order__total-block">
+										<p class="ordering-order__total-price">10 700 ₽</p>
+										<p class="ordering-order__total-denarii">
+											Будет начисленно:
+											<span class="ordering-order__total-number">414</span>
+											<img src="./public/images/denarii.png" alt="Денарии" class="ordering-order__total-img">
+										</p>
+									</div>
+								</div>
+
+								<div class="checkbox">
+									<ul class="checkbox__list">
+										<li class="checkbox__item">
+											<input id="input-rules" type="checkbox" class="checkbox__input">
+											<label for="input-rules" class="checkbox__label">
+												Я ознакомился и согласен с Правилами приобретения 
+												и пользования билетов (-ами) и абонементов (-ами) и поведения 
+												зрителей на матчах Футбольного клуба «Спартак-Москва»
+											</label>
+										</li>
+										<li class="checkbox__item">
+											<input id="input-qr" type="checkbox" class="checkbox__input">
+											<label for="input-qr" class="checkbox__label">
+												Подтверждаю, что я проинформирован о необходимости 
+												наличия QR-кода, оформленного в соответствии с Указом Мэра 
+												Москвы от 8 июня 2020 г. №68-УМ, для прохода на стадион 
+												«Открытие Банк Арена», и согласен на его проверку 
+												сотрудниками контрольно-распорядительной службы
+											</label>
+										</li>
+									</ul>
+								</div>
+
+								<button type="submit" class="ordering-order__button">Оплатить заказ</button>
+							</form>
+
+						</div>
+
+						<div class="ordering__info">
+							<img src="./public/images/Info.svg" alt="Информация" class="ordering__info-img">
+							<p class="ordering__info-text">
+								Обращаем ваше внимание, что созданный вами заказ должен быть оплачен до 
+								08.02.2022 12:37, в противном случае заказ аннулируется, а места поступят обратно в продажу.
+							</p>
+						</div>
+					</div>
+				</section>
 
 			</article>
 		</main>

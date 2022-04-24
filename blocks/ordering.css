@@ -2,17 +2,14 @@
     width: 100%;
 }
 
-.ordering > section {
-    width: 100%;
-    max-width: 82.5vw;
-}
-
 .ordering__header {
     background-image: url(../public/images/banner.png);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 6.77vw 0 2.08vw;
     max-width: 100% !important;
+    width: 100%;
+    margin-bottom: 1.25vw;
 }
 
 .ordering__title {
@@ -24,6 +21,400 @@
     line-height: 1.08;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+}
+
+/* Content */
+
+.ordering-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 24px;
+    width: 100%;
+}
+
+/* Tickets */
+
+.ordering-content__title {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 1.25;
+    color: #FFFFFF;
+}
+
+.ordering-tickets__title {
+    margin: 0 0 0.83vw;
+}
+
+.ordering-tickets__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ordering-tickets__item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 1.25vw;
+    padding: 1.25vw 0;
+    align-items: center;
+    border-bottom: 1px solid #5C6168;
+}
+
+.ordering-tickets__game {
+    display: flex;
+    align-items: center;
+}
+
+.ordering-tickets__logo {
+    width: 4.17vw;
+    height: 4.17vw;
+    margin-right: 0.83vw;
+}
+
+.ordering-tickets__team {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    color: #FFFFFF;
+    margin: 0 0 0.42vw;
+}
+
+.ordering-tickets__date {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.83vw;
+    line-height: 1.38;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.ordering-tickets__place {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    color: #FFFFFF;
+    margin: 0 0 0.42vw;
+}
+
+.ordering-tickets__sector {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.83vw;
+    line-height: 1.38;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.ordering-tickets__actions-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.42vw;
+}
+
+.ordering-tickets__price {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.33;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #CC122D;
+    margin: 0 1.25vw 0 0;
+    text-align: right;
+    width: 100%;
+}
+
+/* Pass */
+
+.ordering-pass {
+    margin-top: 4.17vw;
+}
+
+.ordering-pass__title {
+    margin: 0 0 2.08vw;
+}
+
+.ordering-pass__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ordering-pass__item {
+    border-bottom: 1px solid #5C6168;
+    padding: 1.25vw 0;
+    display: grid;
+    grid-template-columns: 3fr auto max-content 1fr max-content;
+    grid-gap: 1.25vw;
+}
+
+.ordering-pass__name {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.ordering-pass__amount {
+    display: flex;
+    align-items: center;
+}
+
+.ordering-pass__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.67vw;
+    height: 1.67vw;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 1.04vw 1.04vw;
+    background-position: center;
+}
+
+.ordering-pass__icon_minus {
+    border: 1px solid #fff;
+    background-image: url(../public/images/minus.svg);
+}
+
+.ordering-pass__icon_plus {
+    border: 1px solid #C8122D;
+    background-color: #C8122D;
+    background-image: url(../public/images/plus.svg);
+}
+
+.ordering-pass__number {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.56;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0 1.25vw;
+}
+
+.ordering-pass__price {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.33;
+    text-align: right;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #CC122D;
+    margin: 0;
+}
+
+/* Method */
+
+.ordering-method {
+    margin: 4.17vw 0 5.21vw;
+}
+
+.ordering-method__title {
+    margin: 0 0 2.08vw;
+}
+
+.ordering-method__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.25vw;
+}
+
+.ordering-method__item {
+    border: 2px solid #5C6168;
+    padding: 1.25vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.ordering-method__item:hover,
+.ordering-method__item_active {
+    border-color: #C8122D;
+}
+
+.ordering-method__img {
+    width: 3.33vw;
+    height: 3.33vw;
+    margin-right: 0.63vw
+}
+
+.ordering-method__text {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Order */
+
+.ordering-order {
+    background-color: #1B232C;
+    padding: 2.08vw 1.25vw;
+}
+
+.ordering-order__title {
+    margin: 0 0 0.63vw;
+}
+
+.ordering-order__list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1.35vw;
+    border-bottom: 1px solid #5C6168;
+}
+
+.ordering-order__item {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 0.73vw 0;
+    grid-gap: 0.63vw;
+}
+
+.ordering-order__text {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.56;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #A5ACB8;
+    margin: 0;
+}
+
+.ordering-order__price {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.56;
+    text-align: right;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/* Total */
+
+.ordering-order__bottom {
+    padding: 2.08vw 0 0;
+}
+
+.ordering-order__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.15vw;
+}
+
+.ordering-order__total-text {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.ordering-order__total-price {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 1.33;
+    text-align: right;
+    letter-spacing: -0.165px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.ordering-order__total-denarii {
+    display: flex;
+    align-items: center;
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.63vw;
+    line-height: 1.17;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #A5ACB8;
+    margin: 0;
+}
+
+.ordering-order__total-number {
+    color: #FFFFFF;
+    margin: 0 0.21vw;
+}
+
+.ordering-order__total-img {
+    width: 0.83vw;
+    height: 0.83vw;
+}
+
+.ordering-order__button {
+    margin-top: 2.08vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.73vw;
+    width: 100%;
+    border: none;
+    background-color: #C8122D;
+    font-family: FCSM-DemiBold, sans-serif;
+    font-weight: 600;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ordering-order__button:disabled {
+    background-color: #5C6168;
+    color: #A5ACB8;
+    cursor: default;
+} 
+
+.ordering__info {
+    display: flex;
+    background-color: rgba(204, 18, 45, 0.1);
+    padding: 0.42vw 0.83vw;
+    margin-top: 1.25vw;
+}
+
+.ordering__info-img {
+    width: 1.25vw;
+    height: 1.25vw;
+    margin-right: 0.42vw;
+}
+
+.ordering__info-text {
+    font-family: Roboto-Regular, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 /* Mobile
@@ -40,6 +431,215 @@
         font-family: FCSM-Bold, sans-serif;
         font-weight: 700;
     }
+
+    /* Content */
+
+    .ordering-content {
+        display: block;
+        width: 100%;
+    }
+
+    /* Tickets */
+
+    .ordering-content__title {
+        font-size: 5.21vw;
+    }
+
+    .ordering-tickets__title {
+        margin: 2.08vw 0;
+    }
+
+    .ordering-tickets__item {
+        grid-gap: 3.13vw;
+        grid-template-columns: 2fr 1.1fr 1fr;
+        padding: 2.08vw 0;
+        align-items: start;
+    }
+
+    .ordering-tickets__logo {
+        width: 10.42vw;
+        height: 10.42vw;
+        margin-right: 2.08vw;
+    }
+
+    .ordering-tickets__team {
+        font-size: 3.13vw;
+        margin-bottom: 0.78vw;
+    }
+
+    .ordering-tickets__date {
+        font-size: 2.08vw;
+    }
+
+    .ordering-tickets__date span {
+        display: block;
+    }
+
+    .ordering-tickets__place {
+        font-size: 3.13vw;
+        margin-bottom: 0.78vw;
+    }
+
+    .ordering-tickets__sector {
+        font-size: 2.08vw;
+    }
+
+    .ordering-tickets__price {
+        font-size: 3.13vw;
+        margin-right: 3.13vw;
+    }
+
+    /* Pass */
+
+    .ordering-pass {
+        margin-top: 7.29vw;
+    }
+
+    .ordering-pass__title {
+        margin: 0 0 2.08vw;
+    }
+
+    .ordering-pass__item {
+        padding: 2.08vw 0;
+        grid-template-columns: 2fr max-content 1fr max-content;
+        grid-gap: 2.08vw;
+    }
+
+    .ordering-pass__name {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        font-size: 3.13vw;
+    }
+
+    .ordering-pass__icon {
+        width: 4.17vw;
+        height: 4.17vw;
+        background-size: 2.60vw 2.60vw;
+    }
+
+    .ordering-pass__number {
+        font-size: 2.34vw;
+        margin: 0 3.13vw;
+    }
+
+    .ordering-pass__price {
+        font-size: 3.13vw;
+    }
+
+    /* Method */
+
+    .ordering-method {
+        margin: 7.29vw 0 10.42vw;
+    }
+
+    .ordering-method__title {
+        margin-bottom: 5.21vw;
+    }
+
+    .ordering-method__list {
+        grid-template-columns: 1fr;
+        grid-gap: 3.13vw;
+    }
+
+    .ordering-method__item {
+        padding: 3.13vw 4.43vw;
+    }
+
+    .ordering-method__img {
+        width: 8.33vw;
+        height: 8.33vw;
+        margin-right: 1.56vw;
+    }
+
+    .ordering-method__text {
+        font-size: 3.13vw;
+    }
+
+    /* Order */
+
+    .ordering-content__right {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10.42vw;
+    }
+
+    .ordering-order {
+        order: 1;
+        padding: 5.21vw 3.13vw;
+    }
+
+    .ordering-order__title {
+        margin-bottom: 2.08vw;
+    }
+
+    .ordering-order__list {
+        padding-bottom: 2.08vw;
+    }
+
+    .ordering-order__item {
+        padding: 1.30vw 0;
+        grid-gap: 1.30vw;
+    }
+
+    .ordering-order__text {
+        font-size: 2.34vw;
+    }
+
+    .ordering-order__price {
+        font-size: 2.34vw;
+    }
+
+    /* Total */
+
+    .ordering-order__bottom {
+        padding-top: 3.13vw;
+    }
+
+    .ordering-order__total {
+        margin-bottom: 3.13vw;
+    }
+
+    .ordering-order__total-text {
+        font-size: 3.13vw;
+    }
+
+    .ordering-order__total-price {
+        font-size: 3.13vw;
+    }
+
+    .ordering-order__total-denarii {
+        font-size: 1.56vw;
+    }
+
+    .ordering-order__total-number {
+        margin: 0 0.52vw;
+    }
+
+    .ordering-order__total-img {
+        width: 2.08vw;
+        height: 2.08vw;
+    }
+
+    .ordering-order__button {
+        margin-top: 3.13vw;
+        padding: 1.82vw;
+        font-size: 1.82vw;
+    }
+
+    .ordering__info {
+        padding: 1.04vw 2.08vw;
+        margin: 0 0 1.56vw;
+    }
+
+    .ordering__info-img {
+        width: 3.13vw;
+        height: 3.13vw;
+        margin-right: 1.04vw;
+    }
+
+    .ordering__info-text {
+        font-size: 1.82vw;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -51,5 +651,233 @@
         max-width: 91.73vw;
         font-size: 10.67vw;
         line-height: 1.25;
+    }
+
+    /* Content */
+
+    .ordering-content {
+        display: block;
+        width: 100%;
+    }
+
+    /* Tickets */
+
+    .ordering-content__title {
+        font-size: 8.53vw;
+    }
+
+    .ordering-tickets__title {
+        margin: 3.20vw 0 4.27vw;
+    }
+
+    .ordering-tickets__item {
+        grid-gap: 4.27vw;
+        padding: 4.27vw 0;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ordering-tickets__game {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .ordering-tickets__logo {
+        width: 17.07vw;
+        height: 17.07vw;
+        margin-right: 4.27vw;
+    }
+
+    .ordering-tickets__team {
+        font-size: 4.27vw;
+        margin-bottom: 1.07vw;
+    }
+
+    .ordering-tickets__date {
+        font-size: 4.27vw;
+    }
+
+    .ordering-tickets__place {
+        font-size: 4.80vw;
+        margin-bottom: 1.87vw;
+    }
+
+    .ordering-tickets__sector {
+        font-size: 4.27vw;
+    }
+    
+    .ordering-tickets__actions-top {
+        margin-bottom: 1.33vw;
+    }
+
+    .ordering-tickets__price {
+        font-size: 4.27vw;
+        margin-right: 6.40vw;
+    }
+
+    /* Pass */
+
+    .ordering-pass {
+        margin-top: 14.93vw;
+    }
+
+    .ordering-pass__title {
+        margin-bottom: 4.27vw;
+    }
+
+    .ordering-pass__item {
+        padding: 4.27vw 0;
+        grid-template-columns: 2fr 1fr max-content;
+        grid-gap: 2.67vw;
+    }
+
+    .ordering-pass__name {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        font-size: 4.80vw;
+    }
+
+    .ordering-pass__amount {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-content: end;
+    }
+
+    .ordering-pass__icon {
+        width: 8.53vw;
+        height: 8.53vw;
+        background-size: 5.33vw 5.33vw;
+    }
+
+    .ordering-pass__number {
+        font-size: 4.80vw;
+        margin: 0 6.40vw;
+    }
+
+    .ordering-pass__price {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 6.40vw;
+    }
+
+    .ordering-pass__item .selection__select-block {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    /* Method */
+
+    .ordering-method {
+        margin: 14.93vw 0 10.67vw;
+    }
+
+    .ordering-method__title {
+        margin-bottom: 8.53vw;
+    }
+
+    .ordering-method__list {
+        grid-gap: 4.27vw;
+    }
+
+    .ordering-method__item {
+        padding: 4.27vw;
+    }
+
+    .ordering-method__img {
+        width: 10.67vw;
+        height: 10.67vw;
+        margin-right: 3.20vw;
+    }
+
+    .ordering-method__text {
+        font-size: 4.80vw;
+    }
+
+    /* Order */
+
+    .ordering-content__right {
+        margin-bottom: 10.67vw;
+    }
+
+    .ordering-order {
+        padding: 6.40vw;
+    }
+
+    .ordering-order__title {
+        margin-bottom: 2.13vw;
+    }
+
+    .ordering-order__list {
+        padding-bottom: 2.13vw;
+    }
+
+    .ordering-order__item {
+        padding: 2.67vw 0;
+        grid-gap: 2.67vw;
+    }
+
+    .ordering-order__text {
+        font-size: 4.80vw;
+    }
+
+    .ordering-order__price {
+        font-size: 4.80vw;
+    }
+
+    /* Total */
+
+    .ordering-order__bottom {
+        padding-top: 4.27vw;
+    }
+
+    .ordering-order__total {
+        margin-bottom: 3.20vw;
+    }
+
+    .ordering-order__total-text {
+        font-size: 6.40vw;
+    }
+
+    .ordering-order__total-price {
+        font-size: 6.40vw;
+    }
+
+    .ordering-order__total-denarii {
+        font-size: 3.20vw;
+    }
+
+    .ordering-order__total-number {
+        margin: 0 1.07vw;
+    }
+
+    .ordering-order__total-img {
+        width: 4.27vw;
+        height: 4.27vw;
+    }
+
+    .ordering-order__button {
+        margin-top: 4.27vw;
+        padding: 3.73vw;
+        font-size: 3.73vw;
+    }
+
+    .ordering__info {
+        padding: 2.13vw 3.73vw;
+        margin-bottom: 3.20vw;
+    }
+
+    .ordering__info-img {
+        width: 6.40vw;
+        height: 6.40vw;
+        margin-right: 2.13vw;
+    }
+
+    .ordering__info-text {
+        font-size: 3.73vw;
     }
 }

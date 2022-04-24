@@ -163,7 +163,7 @@
 
 .place-order__table-row {
     display: grid;
-    grid-template-columns: 18.85vw 1fr 9.38vw 1.25vw;
+    grid-template-columns: 18.85vw 1fr 9.38vw max-content;
     grid-gap: 0 2.08vw;
     padding: 2.08vw 0 0.52vw;
     border-bottom: 1px solid #5C6168;
@@ -188,45 +188,6 @@
     margin: 0;
 }
 
-.place-order__select-block {
-    position: relative;
-    width: max-content;
-    max-width: 100%;
-    cursor: pointer;
-}
-
-.place-order__select-block::after {
-    content: '';
-    display: block;
-    width: 1.04vw; /*20px*/
-    height: 1.04vw;/*20px*/
-    background: url(../public/images/CaretDown.svg) no-repeat;
-    background-size: 100%;
-    position: absolute;
-    top: 0.36vw;/*7px*/
-    right: 0.63vw;/*12px*/
-}
-
-.place-order__table-select {
-    cursor: pointer;
-    border: 1px solid #5C6168;
-    border-radius: 0;
-    background-color: #1B232C;
-    box-sizing: border-box;
-    padding: 0.36vw 2.08vw 0.36vw 0.83vw;/* 7px 40px 7px 16px*/
-    color: #FFFFFF;
-    font-family: Roboto-Regular, sans-serif;
-    font-weight: 400;
-    font-size: 0.73vw;
-    line-height: 1.29;
-    letter-spacing: 0.1px;
-    min-width: 244px;
-    max-width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
 .place-order__price {
     text-align: right;
     color: #CC122D;
@@ -237,15 +198,6 @@
     letter-spacing: -0.165px;
     text-transform: uppercase;
     margin: 0;
-}
-
-.place-order__delete-img {
-    width: 1.25vw;
-    height: 1.25vw;
-}
-
-.place-order__delete-img:hover path {
-    stroke: #CC122D;
 }
 
 .place-order__total {
@@ -384,7 +336,7 @@
     }
 
     .place-order__table-row {
-        grid-template-columns: 32.81vw 1fr 20.83vw 8.33vw;
+        grid-template-columns: 32.81vw 1fr 20.83vw max-content;
         grid-gap: 5px;
         padding: 3.26vw 0 1.43vw;
     }
@@ -418,15 +370,6 @@
 
     .place-order__price {
         font-size: 3.13vw;
-    }
-
-    .place-order__delete {
-        text-align: right;
-    }
-
-    .place-order__delete-img {
-        width: 3.13vw;
-        height: 3.13vw;
     }
 
     .place-order__total {
@@ -562,11 +505,6 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
-    }
-
-    .place-order__delete-img {
-        width: 6.40vw;
-        height: 6.40vw;
     }
 
     .place-order__total {
