@@ -110,10 +110,8 @@
     margin: 0;
 }
 
-.ordering-tickets__actions-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.42vw;
+.ordering-tickets__actions {
+    height: 100%;
 }
 
 .ordering-tickets__price {
@@ -124,7 +122,7 @@
     letter-spacing: -0.165px;
     text-transform: uppercase;
     color: #CC122D;
-    margin: 0 1.25vw 0 0;
+    margin: 0.6vw 0 0;
     text-align: right;
     width: 100%;
 }
@@ -486,7 +484,7 @@
 
     .ordering-tickets__price {
         font-size: 3.13vw;
-        margin-right: 3.13vw;
+        margin-top: 0.3vw;
     }
 
     /* Pass */
@@ -710,8 +708,8 @@
     }
 
     .ordering-tickets__price {
-        font-size: 4.27vw;
-        margin-right: 6.40vw;
+        font-size: 6.40vw;
+        margin-top: 0;
     }
 
     /* Pass */
@@ -819,6 +817,7 @@
     .ordering-order__item {
         padding: 2.67vw 0;
         grid-gap: 2.67vw;
+        grid-template-columns: 2fr 1fr;
     }
 
     .ordering-order__text {
