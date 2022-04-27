@@ -1,0 +1,140 @@
+.confirmation {
+    display: block;
+    width: 100%;
+}
+
+/* Header */
+
+.confirmation__header {
+    height: 31.25vw;
+    width: 100%;
+}
+
+.confirmation__banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content */
+
+.confirmation__content {
+    max-width: 41.67vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.08vw 0.52vw 4.17vw;
+}
+
+.confirmation__title {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 1.25;
+    color: #FFFFFF;
+    margin: 0 0 1.25vw;
+}
+
+.confirmation__img {
+    width: 4.17vw;
+    height: 4.17vw;
+    margin-bottom: 1.25vw;
+}
+
+.confirmation__number {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    color: #A5ACB8;
+    margin: 0 0 1.25vw;
+}
+
+.confirmation__info {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.56;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.confirmation__link {
+    text-decoration: none;
+    color: #C8122D;
+    cursor: pointer;
+}
+
+/* Mobile
+--------------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    /* Header */
+
+    .confirmation__header {
+        height: 99.87vw;
+    }
+
+    /* Content */
+
+    .confirmation__content {
+        max-width: 85vw;
+        padding: 10.42vw 0;
+    }
+
+    .confirmation__title {
+        font-size: 5.21vw;
+        margin-bottom: 3.13vw;
+    }
+
+    .confirmation__img {
+        width: 10.42vw;
+        height: 10.42vw;
+        margin-bottom: 3.13vw;
+    }
+
+    .confirmation__number {
+        font-size: 3.13vw;
+        margin-bottom: 3.13vw;
+    }
+
+    .confirmation__info {
+        font-size: 2.34vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Header */
+
+    .confirmation__header {
+        height: 99.87vw;
+    }
+
+    /* Content */
+
+    .confirmation__content {
+        max-width: 91.47vw;
+        padding: 10.67vw 0 9.33vw;
+    }
+
+    .confirmation__title {
+        font-size: 8.53vw;
+        margin-bottom: 6.40vw;
+    }
+
+    .confirmation__img {
+        width: 21.33vw;
+        height: 21.33vw;
+        margin-bottom: 6.40vw;
+    }
+
+    .confirmation__number {
+        font-size: 4.80vw;
+        margin-bottom: 6.40vw;
+    }
+
+    .confirmation__info {
+        font-size: 4.27vw;
+    }
+}
