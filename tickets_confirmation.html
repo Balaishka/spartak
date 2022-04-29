@@ -1154,7 +1154,7 @@
 					<!-- Иконка песочных часов './public/images/HourglassHigh.svg' -->
 					<p class="confirmation__number">Номер заказа: 496</p>
 					<p class="confirmation__info">
-						Купленные билеты вы можете просмотреть в Личном кабинете в разделе <a class="confirmation__link">“Мои билеты”</a>
+						Купленные билеты вы можете просмотреть в Личном кабинете в разделе <a href="#" class="confirmation__link">“Мои билеты”</a>
 					</p>
 				</section>
 
@@ -1163,7 +1163,7 @@
 					<div class="shop__top">
 						<h3 class="shop__title">Атрибутика на матч</h3>
 						<div class="shop__slider">
-							<span class="shop__arrow shop__arrow_prew" disabled>
+							<span class="shop__arrow shop__arrow_disabled shop__arrow_prew">
 								<svg class="shop__arrow-img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M20.25 12H3.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 									<path d="M10.5 5.25L3.75 12L10.5 18.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1184,197 +1184,71 @@
 						<ul class="shop-products__list">
 
 							<li class="shop-product">
-								<div class="shop-product__photo">
-									<span class="shop-product__tag">-35%</span>
+								<a href="#" class="shop-product__link">
+									<div class="shop-product__photo">
+										<img src="./public/images/slider/img1.png" alt="Майка игровая детская домашняя 2021-2022" class="shop-product__photo-img">
+										<span class="shop-product__tag">-35%</span>
+									</div>
 
-									<span class="shop-product__like shop-product__like_active">
-										<svg class="shop-product__like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#0D1116" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
+									<div class="shop-product__description">
+										<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
 
-									<ul class="shop-product__list">
-										<li class="shop-product__item shop-product__item_active"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-									</ul>
-								</div>
-
-								<div class="shop-product__description">
-									<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
-
-									<ul class="shop-product__variants">
-										<li class="shop-product__variant">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 1" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant" disabled>
-											<img src="./public/images/slider/variant1.png" alt="Вариант 2" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant shop-product__variant_active">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 3" class="shop-product__variant-photo">
-										</li>
-									</ul>
-
-									<ul class="shop-product__sizes">
-										<li class="shop-product__size">xs</li>
-										<li class="shop-product__size shop-product__size_active">s</li>
-										<li class="shop-product__size" disabled>m</li>
-										<li class="shop-product__size">l</li>
-									</ul>
-
-									<div class="shop-product__buy">
 										<p class="shop-product__price">
 											<span class="shop-product__old-price">6 199 ₽</span>
 											4 999 ₽
 										</p>
-										<button class="shop-product__button">В корзину</button>
 									</div>
-								</div>
+								</a>
 							</li>
 
 							<li class="shop-product">
-								<div class="shop-product__photo">
-									<span class="shop-product__like">
-										<svg class="shop-product__like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#0D1116" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
+								<a href="#" class="shop-product__link">
+									<div class="shop-product__photo">
+										<img src="./public/images/slider/img2.png" alt="Майка игровая детская домашняя 2021-2022" class="shop-product__photo-img">
+									</div>
 
-									<ul class="shop-product__list">
-										<li class="shop-product__item shop-product__item_active"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-									</ul>
-								</div>
+									<div class="shop-product__description">
+										<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
 
-								<div class="shop-product__description">
-									<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
-
-									<ul class="shop-product__variants">
-										<li class="shop-product__variant">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 1" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant" disabled>
-											<img src="./public/images/slider/variant1.png" alt="Вариант 2" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant shop-product__variant_active">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 3" class="shop-product__variant-photo">
-										</li>
-									</ul>
-
-									<ul class="shop-product__sizes">
-										<li class="shop-product__size">xs</li>
-										<li class="shop-product__size shop-product__size_active">s</li>
-										<li class="shop-product__size" disabled>m</li>
-										<li class="shop-product__size">l</li>
-									</ul>
-
-									<div class="shop-product__buy">
 										<p class="shop-product__price">
 											4 999 ₽
 										</p>
-										<button class="shop-product__button">В корзину</button>
 									</div>
-								</div>
+								</a>
 							</li>
 
 							<li class="shop-product">
-								<div class="shop-product__photo">
-									<span class="shop-product__tag">-35%</span>
+								<a href="#" class="shop-product__link">
+									<div class="shop-product__photo">
+										<img src="./public/images/slider/img3.png" alt="Майка игровая детская домашняя 2021-2022" class="shop-product__photo-img">
+										<span class="shop-product__tag">-35%</span>
+									</div>
 
-									<span class="shop-product__like shop-product__like_active">
-										<svg class="shop-product__like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#0D1116" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
+									<div class="shop-product__description">
+										<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
 
-									<ul class="shop-product__list">
-										<li class="shop-product__item shop-product__item_active"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-									</ul>
-								</div>
-
-								<div class="shop-product__description">
-									<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
-
-									<ul class="shop-product__variants">
-										<li class="shop-product__variant">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 1" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant" disabled>
-											<img src="./public/images/slider/variant1.png" alt="Вариант 2" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant shop-product__variant_active">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 3" class="shop-product__variant-photo">
-										</li>
-									</ul>
-
-									<ul class="shop-product__sizes">
-										<li class="shop-product__size">xs</li>
-										<li class="shop-product__size shop-product__size_active">s</li>
-										<li class="shop-product__size" disabled>m</li>
-										<li class="shop-product__size">l</li>
-									</ul>
-
-									<div class="shop-product__buy">
 										<p class="shop-product__price">
 											<span class="shop-product__old-price">6 199 ₽</span>
 											4 999 ₽
 										</p>
-										<button class="shop-product__button">В корзину</button>
 									</div>
-								</div>
+								</a>
 							</li>
 
 							<li class="shop-product">
-								<div class="shop-product__photo">
-									<span class="shop-product__like">
-										<svg class="shop-product__like-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.62519 7.49826 3.01561 6.40635 3.72989 5.53493C4.44416 4.66351 5.4382 4.06636 6.54299 3.84501C7.64778 3.62367 8.79514 3.79179 9.78999 4.32079C10.7848 4.84979 11.5658 5.70702 12 6.74673L12 6.74673C12.4342 5.70702 13.2152 4.84979 14.21 4.32079C15.2049 3.79179 16.3522 3.62367 17.457 3.84501C18.5618 4.06636 19.5558 4.66351 20.2701 5.53493C20.9844 6.40635 21.3748 7.49826 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#0D1116" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
+								<a href="#" class="shop-product__link">
+									<div class="shop-product__photo">
+										<img src="./public/images/slider/img2.png" alt="Майка игровая детская домашняя 2021-2022" class="shop-product__photo-img">
+									</div>
 
-									<ul class="shop-product__list">
-										<li class="shop-product__item shop-product__item_active"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-										<li class="shop-product__item"></li>
-									</ul>
-								</div>
+									<div class="shop-product__description">
+										<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
 
-								<div class="shop-product__description">
-									<h4 class="shop-product__title">Майка игровая детская домашняя 2021-2022</h4>
-
-									<ul class="shop-product__variants">
-										<li class="shop-product__variant">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 1" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant" disabled>
-											<img src="./public/images/slider/variant1.png" alt="Вариант 2" class="shop-product__variant-photo">
-										</li>
-										<li class="shop-product__variant shop-product__variant_active">
-											<img src="./public/images/slider/variant1.png" alt="Вариант 3" class="shop-product__variant-photo">
-										</li>
-									</ul>
-
-									<ul class="shop-product__sizes">
-										<li class="shop-product__size">xs</li>
-										<li class="shop-product__size shop-product__size_active">s</li>
-										<li class="shop-product__size" disabled>m</li>
-										<li class="shop-product__size">l</li>
-									</ul>
-
-									<div class="shop-product__buy">
 										<p class="shop-product__price">
 											4 999 ₽
 										</p>
-										<button class="shop-product__button">В корзину</button>
 									</div>
-								</div>
+								</a>
 							</li>
 
 						</ul>
@@ -1398,7 +1272,7 @@
 			<article class="containerContent__ContainerContent-sc-feb4c6d1-0 footer__NavigationContainer-sc-3cf89b8d-2 ikAgiX hBmXGS">
 				<hr class="footer__StyledLineAfterSwipe-sc-3cf89b8d-3 fCiLOR">
 				<div class="socialNetworks__Container-sc-175b7680-0 gOkIOr">
-					<div class="socialNetworks__LogoBlock-sc-175b7680-1 ijcfML"><img src="./public/mockImage/footer/SpartakLogo.png"></div>
+					<div class="socialNetworks__LogoBlock-sc-175b7680-1 ijcfML"><img src="./public/mockImage/footer/SpartakLogo.png" alt=""></div>
 					<div class="socialNetworks__SocialSelectBlock-sc-175b7680-4 krKdUm">
 						<div class="socialNetworks__SocialBlock-sc-175b7680-2 ikosAE">
 							<a href="" class="socialNetworks__ImageBlock-sc-175b7680-3 ckNbLC">
