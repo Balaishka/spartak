@@ -1,0 +1,141 @@
+.offer-seat {
+    background: url(../public/images/offer-banner.png) no-repeat top / 100% #0D1116;
+    width: 100%;
+    padding-top: 1.25vw;
+    margin-bottom: 2.08vw;
+}
+
+.offer-seat__form {
+    padding: 2.08vw;
+}
+
+.offer-seat__title {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    font-size: 2.08vw;
+    line-height: 1.25;
+    color: #FFFFFF;
+    margin: 0 0 0.83vw;
+    max-width: 34.38vw;
+}
+
+.offer-seat__subtitle {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 0.94vw;
+    line-height: 1.56;
+    letter-spacing: 0.1px;
+    color: #DCE1EA;
+    margin: 0 0 0.83vw;
+}
+
+.offer-seat__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.offer-seat__button {
+    box-sizing: border-box;
+    padding: 0.73vw;
+    font-family: FCSM-Normal, sans-serif;
+    font-weight: 400;
+    font-size: 0.73vw;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 1px solid #C8122D;
+    background: #C8122D;
+    min-width: 9.38vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 0.83vw;
+}
+
+.offer-seat__button:hover {
+    background: #A1141B;
+    border-color: #A1141B;
+    color: #fff;
+}
+
+.offer-seat__button_another {
+    background: transparent;
+    border-color: #fff;
+}
+
+.offer-seat__button_another:hover {
+    background: #C8122D;
+    border-color: #C8122D;
+}
+
+/* Mobile
+--------------------------------------------------*/
+
+@media screen and (max-width: 1199px) {
+    .offer-seat {
+        background: linear-gradient(112.5deg, #820819 -10.15%, rgba(204, 18, 45, 0.24) 49.94%);
+        padding-top: 0;
+        margin-bottom: 5.21vw;
+    }
+    
+    .offer-seat__form {
+        padding: 3.13vw;
+    }
+    
+    .offer-seat__title {
+        font-size: 4.17vw;
+        margin-bottom: 2.08vw;
+        max-width: 100%;
+    }
+    
+    .offer-seat__subtitle {
+        font-size: 2.34vw;
+        margin-bottom: 2.08vw;
+    }
+    
+    .offer-seat__button {
+        padding: 1.82vw;
+        font-size: 1.82vw;
+        min-width: 23.44vw;
+        margin-right: 2.08vw;
+    }
+
+    .offer-seat__button_another {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .offer-seat {
+        margin-bottom: 5.33vw;
+    }
+    
+    .offer-seat__form {
+        padding: 3.20vw;
+    }
+    
+    .offer-seat__title {
+        font-size: 5.33vw;
+        margin-bottom: 3.20vw;
+    }
+    
+    .offer-seat__subtitle {
+        font-size: 3.73vw;
+        margin-bottom: 3.20vw;
+    }
+
+    .offer-seat__buttons {
+        justify-content: space-between;
+    }
+    
+    .offer-seat__button {
+        padding: 2.67vw;
+        font-size: 3.73vw;
+        min-width: auto;
+        width: 48%;
+        margin-right: 0;
+        white-space: nowrap;
+    }
+}

@@ -386,6 +386,11 @@
     cursor: pointer;
 }
 
+.ordering-order__button:hover  {
+    background-color: #A1141B;
+    color: #fff;
+}
+
 .ordering-order__button:disabled {
     background-color: #5C6168;
     color: #A5ACB8;
