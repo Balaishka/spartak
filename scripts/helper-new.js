@@ -5,7 +5,7 @@ const body = document.querySelector('body');
 // Поиск
 
 const search = document.querySelector('.desktopHeader__LangContainer-sc-dde3e47d-6');
-const searchWindow = document.querySelector('.searchHeader__Container-sc-66c5a050-0');
+const searchWindow = document.querySelector('.searchHeader__Container-sc-3e011df-0');
 const searchClose = searchWindow.querySelector('.search-close');
 
 // Корзина
@@ -15,12 +15,24 @@ const popupBackground = document.querySelector('.popup-bg');
 const basketContainer = document.querySelector('.basket-container');
 const basketClose = document.querySelector('.basket-close');
 
+const basketTickets = document.querySelector('.basket-tickets');
+const basketShop = document.querySelector('.basket-shop');
+
+const basketTicketsContent = document.querySelector('.basket-tickets__content');
+const basketShopContent = document.querySelector('.basket-shop__content');
+
 // Корзина мобильная
 
 const basketMobile = document.querySelector('.basket-mobile');
 const popupBackgroundMobile = document.querySelector('.popup-bg-mobile');
 const basketContainerMobile = document.querySelector('.basket-container-mobile');
 const basketCloseMobile = document.querySelector('.basket-close-mobile');
+
+const basketTicketsMobile = document.querySelector('.basket-tickets_mobile');
+const basketShopMobile = document.querySelector('.basket-shop_mobile');
+
+const basketTicketsContentMobile = document.querySelector('.basket-tickets__content_mobile');
+const basketShopContentMobile = document.querySelector('.basket-shop__content_mobile');
 
 // Меню
 
@@ -33,33 +45,18 @@ const menuClose = document.querySelector('.menu-close');
 const headerMobile = document.querySelector('.mobileHeader__Spacer-sc-906384ad-0');
 const headerContainerMobile = document.querySelector('.mobileHeader__MobileHeaderContainer-sc-906384ad-1');
 
-// Схема
-
-const schemeSectors = document.querySelector('.sectors__sheme');
-const schemeWindow = document.querySelector('.sectors__choice-block');
-const buttonSchemeWindow = document.querySelector('.sectors__close');
-
-//  Схема мест
-
-const schemePlace = document.querySelector('.place__scheme-img');
-const schemePlaceOrder = document.querySelector('.place-order');
-
-const arrowOrder = document.querySelector('.place-order__arrow');
-const tableOrder = document.querySelector('.place-order__table');
-const totalOrder = document.querySelector('.place-order__total');
-
 function openSearch() {
-    searchWindow.classList.remove('fOxsBH');
-    searchWindow.classList.add('gSSMqJ');
+    searchWindow.classList.remove('ejdxId');
+    searchWindow.classList.add('bSRzwD');
 }
 
 function closeSearch() {
-    searchWindow.classList.remove('gSSMqJ');
-    searchWindow.classList.add('fOxsBH');
+    searchWindow.classList.remove('bSRzwD');
+    searchWindow.classList.add('ejdxId');
 }
 
 function openBasket(popupBg, basket) {
-    popupBg.classList.remove('eGKEWQ');
+    popupBg.classList.remove('iBxIpi');
     popupBg.classList.add('hxwLib');
 
     basket.classList.remove('iguwRV');
@@ -70,7 +67,7 @@ function openBasket(popupBg, basket) {
 
 function closeBasket(popupBg, basket) {
     popupBg.classList.remove('hxwLib');
-    popupBg.classList.add('eGKEWQ');
+    popupBg.classList.add('iBxIpi');
 
     basket.classList.remove('fofLYV');
     basket.classList.add('iguwRV');
@@ -142,31 +139,49 @@ burger.addEventListener('click', openMenu);
 
 menuClose.addEventListener('click', closeMenu);
 
-if (schemeSectors) {
-    schemeSectors.addEventListener('click', () => {
-        schemeWindow.classList.add('sectors__choice-block_opened');
-    });
-}
+basketTickets.addEventListener('click', () => {
+    basketTickets.classList.remove('exmghx');
+    basketTickets.classList.add('kNsZAC');
 
-if (buttonSchemeWindow) {
-    buttonSchemeWindow.addEventListener('click', () => {
-        schemeWindow.classList.remove('sectors__choice-block_opened');
-    });
-}
+    basketShop.classList.remove('kNsZAC');
+    basketShop.classList.add('exmghx');
 
-if (schemePlace) {
-    schemePlace.addEventListener('click', () => {
-        schemePlaceOrder.classList.add('place-order_opened');
-    });
-}
+    basketTicketsContent.style.display = 'block';
+    basketShopContent.style.display = 'none';
+});
 
-if (arrowOrder) {
-    arrowOrder.addEventListener('click', () => {
-        arrowOrder.classList.toggle('place-order__arrow_close');
-        tableOrder.classList.toggle('place-order__table_close');
-        totalOrder.classList.toggle('place-order__total_close');
-    });
-}
+basketShop.addEventListener('click', () => {
+    basketShop.classList.remove('exmghx');
+    basketShop.classList.add('kNsZAC');
+
+    basketTickets.classList.remove('kNsZAC');
+    basketTickets.classList.add('exmghx');
+
+    basketTicketsContent.style.display = 'none';
+    basketShopContent.style.display = 'block';
+});
+
+basketTicketsMobile.addEventListener('click', () => {
+    basketTicketsMobile.classList.remove('exmghx');
+    basketTicketsMobile.classList.add('kNsZAC');
+
+    basketShopMobile.classList.remove('kNsZAC');
+    basketShopMobile.classList.add('exmghx');
+
+    basketTicketsContentMobile.style.display = 'block';
+    basketShopContentMobile.style.display = 'none';
+});
+
+basketShopMobile.addEventListener('click', () => {
+    basketShopMobile.classList.remove('exmghx');
+    basketShopMobile.classList.add('kNsZAC');
+
+    basketTicketsMobile.classList.remove('kNsZAC');
+    basketTicketsMobile.classList.add('exmghx');
+
+    basketTicketsContentMobile.style.display = 'none';
+    basketShopContentMobile.style.display = 'block';
+});
 
 let valueScroll = 0;
 

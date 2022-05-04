@@ -18,3 +18,37 @@ main a:focus {
     color: #A1141B;
     text-decoration: none;
 }
+
+.partnersRowScrolling__Block {
+    position: relative;
+}
+
+.partnersRowScrolling__Gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(90.63deg, #1B232C 0.61%, rgba(24, 31, 39, 0) 99.58%);
+    z-index: 1;
+    width: 21.46vw;
+}
+
+.gradient_left {
+    left: 0;
+}
+
+.gradient_right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    right: 0;
+}
+
+@media screen and (max-width: 1199px) {
+    .partnersRowScrolling__Gradient {
+        width: 21.35vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .partnersRowScrolling__Gradient {
+        display: none;
+    }
+}
