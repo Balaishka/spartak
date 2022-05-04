@@ -178,7 +178,7 @@
 }
 
 .selection-nav__number {
-    border: 0.10vw solid #A5ACB8;
+    border: 1px solid #A5ACB8;
     box-sizing: border-box;
     border-radius: 1.67vw;
     font-family: FCSM-Medium, sans-serif;
