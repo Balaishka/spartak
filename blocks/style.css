@@ -52,3 +52,22 @@ main a:focus {
         display: none;
     }
 }
+
+.modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__button_disabled,
+.modal__button_disabled:hover {
+    cursor: default;
+    background-color: #5C6168;
+    border-color: #5C6168;
+    color: #A5ACB8;
+    opacity: 1;
+}
+
+.signup__H1-red {
+    color: #C8122D;
+}
