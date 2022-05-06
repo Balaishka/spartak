@@ -1,0 +1,148 @@
+.subscribtion__header {
+    text-align: center;
+    padding: 2.08vw 0 4.17vw;
+}
+
+.subscribtion__title {
+    font-family: FCSM-Medium, sans-serif;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 1.42;
+    text-align: center;
+    color: #DCE1EA;
+    margin: 0 0 0.83vw;
+}
+
+.subscribtion__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    justify-content: center;
+}
+
+.subscribtion__item {
+    text-align: center;
+}
+
+.subscribtion__name {
+    font-family: FCSM-Bold, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Seven */
+
+.subscribtion__list_seven {
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1.51vw;
+}
+
+.subscribtion__list_seven .subscribtion__img {
+    max-width: 10.68vw;
+}
+
+.subscribtion__list_seven .subscribtion__name {
+    font-size: 1.67vw;
+    line-height: 1.31;
+}
+
+/* Five */
+
+.subscribtion__list_five {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1.77vw;
+}
+
+.subscribtion__list_five .subscribtion__img {
+    max-width: 11.46vw;
+}
+
+.subscribtion__list_five .subscribtion__name {
+    font-size: 2.08vw;
+    line-height: 1.25;
+}
+
+/* Mobile
+---------------------------------------------------*/
+
+@media screen and (max-width:1199px){
+    .subscribtion__header {
+        padding: 5.21vw 0 10.42vw;
+    }
+    
+    .subscribtion__title {
+        font-size: 3.13vw;
+        margin-bottom: 2.08vw;
+    }
+    
+    /* Seven */
+    
+    .subscribtion__list_seven {
+        grid-gap:0.8vw;
+    }
+    
+    .subscribtion__list_seven .subscribtion__img {
+        max-width: 10vw;
+    }
+    
+    .subscribtion__list_seven .subscribtion__name {
+        font-size: 2vw;
+    }
+    
+    /* Five */
+    
+    .subscribtion__list_five {
+        grid-gap: 1.04vw;
+    }
+    
+    .subscribtion__list_five .subscribtion__img {
+        max-width: 15.63vw;
+    }
+    
+    .subscribtion__list_five .subscribtion__name {
+        font-size: 3.13vw;
+    }
+}
+
+@media screen and (max-width:767px){
+    .subscribtion__header {
+        padding: 6.40vw 0;
+    }
+    
+    .subscribtion__title {
+        font-size: 4.27vw;
+        margin-bottom: 4.27vw;
+    }
+
+    .subscribtion__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscribtion__item {
+        margin: 2.13vw;
+    }
+    
+    /* Seven */
+    
+    .subscribtion__list_seven .subscribtion__img {
+        max-width: 13.3vw;
+    }
+    
+    .subscribtion__list_seven .subscribtion__name {
+        font-size: 3.8vw;
+    }
+    
+    /* Five */
+    
+    .subscribtion__list_five .subscribtion__img {
+        max-width: 21.33vw;
+    }
+    
+    .subscribtion__list_five .subscribtion__name {
+        font-size: 4.80vw;
+    }
+}

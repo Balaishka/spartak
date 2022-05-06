@@ -17,6 +17,8 @@
 	<link rel="stylesheet" href="./blocks/style.css" />
 	<link rel="stylesheet" href="./blocks/selection.css" />
 	<link rel="stylesheet" href="./blocks/sectors.css" />
+	<link rel="stylesheet" href="./blocks/offer-seat.css" />
+	<link rel="stylesheet" href="./blocks/subscription.css" />
 
 	<link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
 </head>
@@ -1144,46 +1146,42 @@
 			</div>
 		</header>
 		<main class="content layout__MainContainer-sc-bdf80ada-0 eXeoTU">
-			<article class="selection containerContent__ContainerContent-sc-feb4c6d1-0 swiperInContentContainer__MainContainer-sc-978aa125-0 ikAgiX hjwbdL">
+			<article class="selection subscribtion containerContent__ContainerContent-sc-feb4c6d1-0 swiperInContentContainer__MainContainer-sc-978aa125-0 ikAgiX hjwbdL">
 				
-				<section class="selection__header">
-					<h1 class="selection__title">1-й тур | Тинькофф РПЛ</h1>
-					<div class="selection__game">
-						<div class="selection__team selection__team_left">
-							<img src="./public/images/team-left.png" alt="Спартак" class="selection__team-logo">
-							<p class="selection__team-name">Спартак</p>
-						</div>
+				<section class="subscribtion__header">
+					<h3 class="subscribtion__title">Абонемент на 5 домашних матчей «Спартака»</h3>
 
-						<div class="selection__info">
-							<h2 class="selection__time">19 июля, 19:00</h2>
-							<p class="selection__text">Открытие Банк Арена</p>
-						</div>
-
-						<div class="selection__team selection__team_right">
-							<img src="./public/images/team-right.png" alt="Локомотив" class="selection__team-logo">
-							<p class="selection__team-name">Локомотив</p>
-						</div>
-					</div>
-
-					<div class="selection__winline">
-						<img src="./public/images/logo-winline.png" alt="Винлайн" class="selection__winline-img">
-						<div class="selection__coef">
-							<span class="selection__coef-number selection__coef-number_active">3.25</span>
-							<span class="selection__coef-text">п1</span>
-						</div>
-						<div class="selection__coef">
-							<span class="selection__coef-number">2.25</span>
-							<span class="selection__coef-text">х</span>
-						</div>
-						<div class="selection__coef">
-							<span class="selection__coef-number">1.25</span>
-							<span class="selection__coef-text">п2</span>
-						</div>
-					</div>
-
-					<a href="#" class="selection__winline-link">
-						<img src="./public/images/button-winline.png" alt="Смотреть трансляцию на Винлайн" class="selection__winline-link-img">
-					</a>
+					<!-- Если поменять класс на subscribtion__list_five, то поменяются стили (надо также удалить два subscribtion__item) -->
+					<ul class="subscribtion__list subscribtion__list_seven">
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-1.png" alt="Рубин" class="subscribtion__img">
+							<p class="subscribtion__name">Рубин</p>
+						</li>
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-2.png" alt="Урал" class="subscribtion__img">
+							<p class="subscribtion__name">Урал</p>
+						</li>
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-3.png" alt="Уфа" class="subscribtion__img">
+							<p class="subscribtion__name">Уфа</p>
+						</li>
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-4.png" alt="Краснодар" class="subscribtion__img">
+							<p class="subscribtion__name">Краснодар</p>
+						</li>
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-5.png" alt="Арсенал" class="subscribtion__img">
+							<p class="subscribtion__name">Арсенал</p>
+						</li>
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-6.png" alt="Нижний Новгород" class="subscribtion__img">
+							<p class="subscribtion__name">Нижний Новгород</p>
+						</li>
+						<li class="subscribtion__item">
+							<img src="./public/images/subscription-logos/logo-7.png" alt="Локомотив" class="subscribtion__img">
+							<p class="subscribtion__name">Локомотив</p>
+						</li>
+					</ul>
 				</section>
 
 				<section class="selection-nav">
@@ -1203,6 +1201,17 @@
 							<span>Данные заказа</span>
 						</li>
 					</ul>
+				</section>
+
+				<section class="offer-seat">
+					<form action="" name="offer-seat" class="offer-seat__form">
+						<h3 class="offer-seat__title">Можете выбрать свое место Сектор В102, ряд 7, место 56</h3>
+						<p class="offer-seat__subtitle">Вы можете выкупить место , которое было зарезервировано за вами на прошлом абонементе.</p>
+						<div class="offer-seat__buttons">
+							<button class="offer-seat__button">Выбрать</button>
+						<button class="offer-seat__button offer-seat__button_another">Выбрать другое</button>
+						</div>
+					</form>
 				</section>
 
 				<section class="sectors">
