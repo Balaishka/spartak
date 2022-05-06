@@ -50,9 +50,9 @@
         const newResult = document.querySelector('.new-result');
         const coeff = document.querySelector('.coeff');
 
-        const coef = 19.2;
+        //const coef = 19.2;
         //const coef = 7.68;
-        //const coef = 3.75;
+        const coef = 3.75;
 
         for (let i = 1; i <= 33; i++) {
             let result = (i / coef).toFixed(2);
@@ -72,7 +72,7 @@
             third.append(`${i}px  =  ${result}vw       `);
         }
 
-        let num = 180;
+        let num = 120;
         let result = (num / coef).toFixed(2);
         newResult.append(`${num}px  =  ${result}vw       `);
 
